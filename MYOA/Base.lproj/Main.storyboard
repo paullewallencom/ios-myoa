@@ -32,25 +32,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-wT-1uO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-wT-1uO">
                                 <rect key="frame" x="87" y="138" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ral-6M-oCI"/>
+                                    <constraint firstAttribute="height" constant="128" id="tfq-Hj-s6z"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enc-Qz-5a3" userLabel=" Top Button">
-                                <rect key="frame" x="174" y="727" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enc-Qz-5a3" userLabel=" Top Button">
+                                <rect key="frame" x="180" y="429" width="54" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbU-lF-5jA" userLabel="Bottom Button">
-                                <rect key="frame" x="174" y="782" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbU-lF-5jA" userLabel="Bottom Button">
+                                <rect key="frame" x="180" y="487" width="54" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gqz-mE-SvV"/>
@@ -58,7 +64,11 @@
                         <constraints>
                             <constraint firstItem="Fuk-wT-1uO" firstAttribute="leading" secondItem="Gqz-mE-SvV" secondAttribute="leading" constant="87" id="7W8-sM-EgR"/>
                             <constraint firstItem="Fuk-wT-1uO" firstAttribute="top" secondItem="Gqz-mE-SvV" secondAttribute="top" constant="50" id="BUt-Ey-NJS"/>
+                            <constraint firstItem="VbU-lF-5jA" firstAttribute="centerX" secondItem="Fuk-wT-1uO" secondAttribute="centerX" id="MVz-VO-5nA"/>
+                            <constraint firstItem="enc-Qz-5a3" firstAttribute="top" secondItem="Fuk-wT-1uO" secondAttribute="bottom" constant="163" id="Xth-Se-vsv"/>
+                            <constraint firstItem="VbU-lF-5jA" firstAttribute="top" secondItem="enc-Qz-5a3" secondAttribute="bottom" constant="24" id="g62-If-79d"/>
                             <constraint firstItem="Gqz-mE-SvV" firstAttribute="trailing" secondItem="Fuk-wT-1uO" secondAttribute="trailing" constant="87" id="m0d-Ro-S5o"/>
+                            <constraint firstItem="enc-Qz-5a3" firstAttribute="centerX" secondItem="Gqz-mE-SvV" secondAttribute="centerX" id="ovB-Qb-312"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i5H-vy-oqk"/>
@@ -71,6 +81,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
